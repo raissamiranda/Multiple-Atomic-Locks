@@ -36,15 +36,15 @@ int main (int arg, char *argv[]){
     }
 
 
-    for (int i = 0; i < 4 ; i++){
-        printf("thread %d:  ", i);
-        printf("id: %d  freeTime: %d  criticalTime: %d ", allThreads[i].id, allThreads[i].freeTime, allThreads[i].criticalTime);
-            printf(" resources :");
-        for (int j = 0; j < allThreads[i].numResources; j++) {
-            printf("%d ", allThreads[i].resources[j]);
-        }
-        printf("\n");
-    }
+    // for (int i = 0; i < 4 ; i++){
+    //     printf("thread %d:  ", i);
+    //     printf("id: %d  freeTime: %d  criticalTime: %d ", allThreads[i].id, allThreads[i].freeTime, allThreads[i].criticalTime);
+    //         printf(" resources :");
+    //     for (int j = 0; j < allThreads[i].numResources; j++) {
+    //         printf("%d ", allThreads[i].resources[j]);
+    //     }
+    //     printf("\n");
+    // }
 
 
     return 0;
