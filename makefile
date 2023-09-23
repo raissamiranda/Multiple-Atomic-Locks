@@ -7,7 +7,7 @@ threads: threads.o spend_time.o
 	$(CC) -Wall -g threads.o spend_time.o -o threads -lm -pthread
 
 threads.o: threads.c
-	$(CC) -g threads.c $(CFLAGS)
+	$(CC) threads.c $(CFLAGS)
 
 spend_time.o: spend_time.c
-	$(CC) -g spend_time.c $(CFLAGS)
+	$(CC) spend_time.c $(CFLAGS)
